@@ -24,7 +24,7 @@ jobs:
 
       - name: Run load test
         run: |
-          k6 run --out json=results.json tests
+          k6 run --out json=results.json tests/thresholds.js
 
       - name: Upload results
         uses: actions/upload-artifact@v3
